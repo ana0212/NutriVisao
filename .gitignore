@@ -1,0 +1,25 @@
+# Ignorar ambientes virtuais
+venv/
+.env/
+
+# Ignorar arquivos grandes e de cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar notebooks temporários
+.ipynb_checkpoints/
+
+# Ignorar dados ou modelos grandes
+*.h5
+*.pkl
+*.pt
+*.ckpt
+*.tflite
+*.zip
+*.tar.gz
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
