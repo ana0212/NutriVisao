@@ -19,6 +19,7 @@ __pycache__/
 *.tflite
 *.zip
 *.tar.gz
+*.streamlit/
 
 # Ignorar arquivos do sistema
 .DS_Store
