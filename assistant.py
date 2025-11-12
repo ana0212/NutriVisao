@@ -7,7 +7,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
 # --- Configuração da API Gemini ---
-genai.configure(api_key="AIzaSyBphqneBBeCbVhUFnvklr4Qyx59p-OmVPE")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # --- Funções auxiliares ---
 embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
