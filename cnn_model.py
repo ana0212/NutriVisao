@@ -16,7 +16,7 @@ def carregar_modelo():
     # Se o modelo não existir, faz download do Google Drive
     if not os.path.exists(model_path):
         st.info("Baixando o modelo... isso pode levar alguns minutos.")
-        url = "https://drive.google.com/file/d/1-4JsC2MtuAhJabNXF1nvk7ZF-_WJuONt/view"
+        url = "https://drive.google.com/uc?id=1-4JsC2MtuAhJabNXF1nvk7ZF-_WJuONt"
         os.makedirs("modelos", exist_ok=True)
         gdown.download(url, model_path, quiet=False)
 
