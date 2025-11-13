@@ -20,7 +20,7 @@ O sistema permite:
 **Relatório Técnico (TCC)**
 
 - Para conhecer os detalhes metodológicos, resultados e fundamentação teórica deste projeto, consulte o relatório completo do Trabalho de Conclusão de Curso (TCC):
-- [Acesse o Relatório Completo do TCC (PDF)]([https://link-do-relatorio.com](https://drive.google.com/file/d/1OfltMipkMKdVfBWYgpwNlvyVPPWb-7vv/view?usp=drive_link)  
+- [Acesse o Relatório Completo do TCC (PDF)](https://drive.google.com/file/d/1OfltMipkMKdVfBWYgpwNlvyVPPWb-7vv/view?usp=drive_link)  
 - (Instituto Superior Manuel Teixeira Gomes – Curso de Engenharia Informática, 2025)*
 
 **Estrutura do Projeto**
