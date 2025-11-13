@@ -69,6 +69,6 @@ Com base apenas nessas informações, responda de forma clara e educativa à seg
 
 Cada valor nutricional corresponde ao mg por 100 g de parte edível com exceção do grupo Bebidas alcoólicas (nível 1) cujos valores são expressos por 100 ml de parte edível.
 """
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
     response = model.generate_content(prompt)
     return response.text
