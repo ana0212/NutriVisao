@@ -24,6 +24,8 @@ O sistema permite:
 - (Instituto Superior Manuel Teixeira Gomes – Curso de Engenharia Informática, 2025)*
 
 **Estrutura do Projeto**
+
+```bash
 NutriVisao/
 │
 ├── modelos/
@@ -44,6 +46,7 @@ NutriVisao/
 ├── requirements.txt                      # Dependências
 ├── .streamlit/secrets.toml               # Configurações de chaves e variáveis
 └── Página_Inicial.py                     # Página principal do app
+```
 
 **Funcionalidades em Detalhe**
 1. Classificação de Alimentos
