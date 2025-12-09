@@ -15,7 +15,7 @@ O sistema permite:
 - Visualizar dados e comparações em uma tabela e dashboard interativos.
 
 **Demonstração**
-- [Acesse o app online:](https://nutrivisao.streamlit.app)
+- [Acesse o app online](https://nutrivisao.streamlit.app)
 
 **Relatório Técnico (TCC)**
 
