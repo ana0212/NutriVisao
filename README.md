@@ -64,6 +64,43 @@ NutriVisao/
 - Utiliza embeddings semânticos (all-MiniLM-L6-v2) para contextualizar as perguntas.
 - O assistente responde com base em dados oficiais e promove educação nutricional responsável.
 
+**Avaliação e Resultados**
+
+O desempenho do NutriVisão foi analisado em três módulos principais: classificação de imagens (CNN), recomendação nutricional e assistente nutricional com IA (RAG + Gemini).
+
+1. Classificação de Imagens (CNN):
+- A CNN alcançou ~100% de acurácia e F1 ≈ 1.0 na fase de validação, com pequenas quedas em algumas classes (ex.: recall de 0,85 para Apple Red 2 e 0,78 para Corn Husk 1).
+- Em testes reais na aplicação (18 imagens):
+  - 61,5% das imagens foram classificadas corretamente.
+  - Os erros ocorreram principalmente em imagens fora do padrão do dataset (fundos não brancos, múltiplos alimentos, desfoque ou objetos visualmente semelhantes).
+- A avaliação sugere que o modelo é forte em condições ideais, mas precisa de preprocessamento mais robusto e dados mais variados para cenários do mundo real.
+
+2. Sistema de Recomendação Nutricional:
+- Foram avaliados cinco alimentos (banana, pera, castanha, pepino e cenoura) e seus 10 vizinhos nutricionais estimados.
+- As métricas incluíram Precision@k, Recall@k, nDCG@k, RMSE e Spearman.
+- Os resultados mostraram que:
+  - O modelo identifica bem similares nutricionais (correlações Spearman elevadas).
+  - A ordenação é excelente para alimentos homogêneos (peras, castanhas), mas menos precisa para alimentos mais variáveis (cenouras, pepinos).
+- Em síntese, o sistema recupera substitutos nutricionalmente pertinentes, cumprindo bem seu propósito educacional.
+
+3. Assistente Nutricional (RAG + Gemini): 
+- Foram realizados 37 testes via interface e 20 testes via notebook.
+- Na interface:
+  - 80% de acerto em perguntas diretas sobre um alimento.
+  - Bom desempenho em comparações simples, mas dificuldade com perguntas abertas, variações de nome e múltiplos alimentos.
+- No RAG:
+  - Recall alto (0,75), mas baixa precisão (0,25), indicando documentos irrelevantes ainda retornando.
+  - MRR = 0,40, sugerindo que respostas relevantes aparecem apenas entre a 2ª e 3ª posição.
+  - Baixa cobertura (~40%) e 45% de falhas por alimento não reconhecido, mas latência baixa (~0,025s) garante fluidez.
+- Em resumo, o assistente responde bem a perguntas diretas, mas precisa de aprimoramento em extração e ranqueamento de informações para consultas complexas.
+
+No geral, o NutriVisão demonstra bons resultados funcionais, com:
+- Excelente desempenho da CNN em condições controladas,
+- Recomendação nutricional coerente e útil,
+- Assistente responsivo e informativo para consultas simples.
+
+O projeto destaca oportunidades claras de evolução: melhor detecção de alimentos, maior diversidade de imagens e aperfeiçoamento no ranqueamento do RAG.
+
 **Instalação Local**
 1️. Clone o repositório
 git clone https://github.com/ana0212/NutriVisao.git
